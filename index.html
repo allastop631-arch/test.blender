@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="./test.css">
+  <title>Тест по Blender — уровень: новичок</title>
+  
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div style="font-size:18px;margin-bottom:6px;color:var(--muted)">Таймер: <span id="timer">40:00</span></div>
+      <div class="logo">B</div>
+      <div>
+        <h1>Тест по Blender — уровень: новичок</h1>
+        <p class="lead">40 вопросов • выбор одного варианта • в конце — результат и объяснения</p>
+      </div>
+    </header>
+
+    <div class="card" id="app">
+      <div id="quiz-area">
+        <!-- Вопросы подгружаются из JS -->
+      </div>
+
+      <div class="controls">
+        <div style="flex:1">
+          <div class="progress" aria-hidden>
+            <i id="prog-bar"></i>
+          </div>
+          <div class="small" id="qcount" style="margin-top:8px">Вопрос <span id="current">0</span> из <span id="total">0</span></div>
+        </div>
+        <div style="display:flex;gap:8px;align-items:center;margin-left:12px">
+          <button id="prevBtn" class="secondary">Назад</button>
+          <button id="nextBtn">Далее</button>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      Подходит для тех, кто недавно начал работать в Blender. Используйте в образовательных целях.
+    </footer>
+  </div>
+<script src="./test.js"></script>
+</body>
+</html>
